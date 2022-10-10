@@ -62,7 +62,7 @@ app.use(
 const port = process.env.PORT || 3000
 
 app.get('/api/v1', (req: any, res: any) => {
-    res.send('<h2>Hi there!!!!!!!</h2>')
+    res.send('<h2>Hi there!</h2>')
 })
 
 app.use('/api/v1/posts', postRouter)
