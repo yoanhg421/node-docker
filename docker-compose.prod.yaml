@@ -8,10 +8,10 @@ services:
       context: .
       args:
         NODE_ENV: ${NODE_ENV}
-      environment:
-        NODE_ENV: ${NODE_ENV}
-        MONGO_USER: ${MONGO_USER}
-        MONGO_PASSWORD: ${MONGO_PASSWORD}
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
     command: node ./dist
   mongo:
     environment:
