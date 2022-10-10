@@ -6,6 +6,7 @@ services:
       - ./src/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
   node-app:
     build: .
+    image: 319692863428.dkr.ecr.us-west-2.amazonaws.com/node-app:latest
     environment:
       PORT: 3000
     restart: always
