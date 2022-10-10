@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  node-app:
+    build: .
+    restart: always
+    environment:
+      - PORT=3000
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/home/app/src:ro
+      - /home/app/node_modules 
+    command: yarn dev
